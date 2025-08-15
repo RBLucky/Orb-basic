@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: #111;
+  color: white;
+  font-family: sans-serif;
+}
+canvas {
+  display: block;
+}
+.customizer {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+.customizer h2 {
+  margin-top: 0;
+}
+.control {
+  margin-bottom: 15px;
+}
+.control label {
+  display: block;
+  margin-bottom: 5px;
+}

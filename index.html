@@ -3,9 +3,71 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Basic 3D</title>
+    <title>Interactive 3D Orb</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="customizer">
+      <h2>Customize</h2>
+      <div class="control">
+        <label for="shape">Shape</label>
+        <select id="shape">
+          <option value="sphere">Sphere</option>
+          <option value="cube">Cube</option>
+          <option value="torus">Torus</option>
+        </select>
+      </div>
+      <div class="control">
+        <label for="bgColor">Background Color</label>
+        <input type="color" id="bgColor" value="#111111" />
+      </div>
+      <div class="control">
+        <label for="particleColor">Particle Color</label>
+        <input type="color" id="particleColor" value="#ffffff" />
+      </div>
+      <div class="control">
+        <label for="particleSize">Particle Size</label>
+        <input
+          type="range"
+          id="particleSize"
+          min="0.01"
+          max="0.5"
+          step="0.01"
+          value="0.1"
+        />
+      </div>
+      <div class="control">
+        <label for="particleCount">Particle Count</label>
+        <input
+          type="range"
+          id="particleCount"
+          min="500"
+          max="5000"
+          step="100"
+          value="1000"
+        />
+      </div>
+      <div class="control">
+        <label for="rotationSpeed">Rotation Speed</label>
+        <input
+          type="range"
+          id="rotationSpeed"
+          min="0"
+          max="0.01"
+          step="0.001"
+          value="0.002"
+        />
+      </div>
+      <div class="control">
+        <label for="fog">Enable Fog</label>
+        <input type="checkbox" id="fog" />
+      </div>
+      <div class="control">
+        <label for="pulse">Enable Pulse Animation</label>
+        <input type="checkbox" id="pulse" />
+      </div>
+    </div>
+
     <canvas></canvas>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
